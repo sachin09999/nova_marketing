@@ -1,0 +1,21 @@
+# Secrets & Credentials
+marketing-bot/client_secret*.json
+!marketing-bot/client_secret.example.json
+marketing-bot/jsons/
+marketing-bot/token*.pickle
+marketing-bot/history.json
+marketing-bot/history_backup_*.json
+.env
+
+# Generated Media
+shorts-generator/output/
+shorts-generator/assets/
+
+# Telegram Bot Secrets
+telegram-bot/config.json
+!telegram-bot/config.example.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/

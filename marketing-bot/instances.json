@@ -1,0 +1,17 @@
+[
+  {
+    "id": "inst_mvo0pvee",
+    "name": "Instance #2 (Worker 2)",
+    "accounts": [
+      "/home/dts-sachin/Desktop/APP_scheme/NovaBorrow-Marketing/marketing-bot/client_secret.json",
+      "/home/dts-sachin/Desktop/APP_scheme/NovaBorrow-Marketing/marketing-bot/jsons/client_secret_1055840379396-86ehp1c70kftrseiv65viendc5239fqj.apps.googleusercontent.com.json"
+    ],
+    "mode": "hybrid",
+    "keyword": "",
+    "max_comments": 25,
+    "min_delay": 30,
+    "max_delay": 60,
+    "public_search": true,
+    "ignore_history": false
+  }
+]

@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: novaborrow-marketing-suite
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r marketing-bot/requirements.txt aiohttp requests"
+    startCommand: "python3 server.py"
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: HOST
+        value: 0.0.0.0
+      - key: DASHBOARD_USER
+        value: admin
+      - key: DASHBOARD_PASS
+        generateValue: false
+        value: novaborrow2026

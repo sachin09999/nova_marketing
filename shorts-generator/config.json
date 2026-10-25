@@ -1,0 +1,57 @@
+{
+  "voice_settings": {
+    "default_voice": "hi-IN-MadhurNeural",
+    "voices": {
+      "male": "hi-IN-MadhurNeural",
+      "female": "hi-IN-SwaraNeural"
+    },
+    "rate": "+12%",
+    "pitch": "+0Hz"
+  },
+  "video_settings": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "font_name": "DejaVu Sans",
+    "primary_color": "&H00FFFF",
+    "outline_color": "&H000000",
+    "font_size": 18
+  },
+  "scripts": [
+    {
+      "id": "low_cibil_secret",
+      "title": "Low CIBIL Par Instant Loan Kaise Le",
+      "hook": "Kya aapka CIBIL score 550 se kam hai aur har app aapka loan reject kar rahi hai?",
+      "body": "Tension mat lijiye. 2026 me aisi apps hain jo salary slip nahi balki aapki UPI transaction history dekhkar loan deti hain. Inhi me sabse fast approval NovaBorrow par milta hai. Yahan low CIBIL par bhi 10,000 se 50,000 tak ka instant loan direct bank account me transfer ho jata hai.",
+      "cta": "Maine khud 25,000 ka emergency loan liya tha aur sirf 15 minute me approve hua. NovaBorrow abhi check out karein, link bio aur comments me hai!"
+    },
+    {
+      "id": "top_3_apps",
+      "title": "Top Apps Without Salary Slip 2026",
+      "hook": "Bina salary slip ke emergency me 20,000 se 40,000 chahiye? Ye video abhi save kar lo.",
+      "body": "Number 1 par aati hai NovaBorrow jo students aur self-employed dono ko instant approval deti hai. Isme na koi processing fee pehle deni hoti hai aur na physical verification ka jhanjhat. Sirf Aadhaar aur PAN card se KYC complete hoti hai aur paisa turant aapke account me.",
+      "cta": "Emergency ke time kisi se mangne ki zaroorat nahi hai. Abhi Google par search karein NovaBorrow ya link bio me dekhein!"
+    },
+    {
+      "id": "loan_rejection_mistake",
+      "title": "Loan Baar Baar Reject Kyu Hota Hai",
+      "hook": "Agar aapka loan baar-baar reject ho raha hai, to aap ye 1 sabse badi galti kar rahe hain.",
+      "body": "Aap ek sath 5 alag-alag apps par apply kar dete hain jisse aapka CIBIL aur gir jata hai. Iske bajaye ek aise platform par apply karein jiska approval rate 90% se zyada ho. NovaBorrow par bina strict credit score check ke 15,000 se 35,000 tak ka loan aaram se approve ho jata hai.",
+      "cta": "Maine khud apply kiya tha aur bina kisi drama ke approve hua. Link comments me hai, abhi try karein!"
+    },
+    {
+      "id": "instant_cash_15min",
+      "title": "15 Minute Me Instant Cash Loan",
+      "hook": "Raat ko 12 baje urgent cash ki zaroorat pad jaye to kya karenge?",
+      "body": "Banks to band hote hain aur dost phone nahi uthate. Aise time par NovaBorrow sabse zyada kaam aati hai. 100% online application, 5 minute me paperless approval, aur seedha aapke bank account me transfer. Koi hidden charges nahi aur simple EMI options.",
+      "cta": "Emergency ke liye NovaBorrow app abhi download karein. Link aapko bio aur pin comment me mil jayega!"
+    },
+    {
+      "id": "student_self_employed",
+      "title": "Students & Freelancers Ke Liye Loan",
+      "hook": "Aap student ya freelancer hain aur koi income proof nahi hai?",
+      "body": "Badi banks to salary slip maangti hain, par NovaBorrow par aapko sirf basic details par 5,000 se 30,000 tak ki credit limit mil jati hai. Zero paperwork, 100% digital KYC aur fast disbursement.",
+      "cta": "Pocket money ya urgent expenses ke liye NovaBorrow try karein. Link bio aur first comment me pinned hai!"
+    }
+  ]
+}

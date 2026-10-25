@@ -1,0 +1,12 @@
+.git
+.agents
+.claude
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.venv
+venv
+*.log
+marketing-bot.zip
+.env

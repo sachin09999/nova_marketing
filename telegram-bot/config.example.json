@@ -1,0 +1,9 @@
+{
+  "bot_token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+  "bot_username": "YOUR_BOT_USERNAME",
+  "channel_id": "@YOUR_CHANNEL_USERNAME",
+  "website_url": "https://novaborrow.in",
+  "daily_tips": [
+    "⚡ Daily Loan Tip: Apply with NovaBorrow for instant approval: {website_url}"
+  ]
+}
