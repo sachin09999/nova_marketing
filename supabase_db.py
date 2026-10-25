@@ -13,17 +13,30 @@ import psycopg2
 from psycopg2.extras import execute_values, Json
 
 # Supabase connection string (IPv4 Pooler for Render / cloud compatibility)
-# Can be overridden with SUPABASE_DB_URL environment variable
 DEFAULT_CONN_STR = "postgresql://postgres.uhgzgbkovachkdiaudfx:%2339DGAKT%23eMbjNg@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
-DATABASE_URL = os.environ.get("SUPABASE_DB_URL", DEFAULT_CONN_STR)
+raw_db_url = os.environ.get("SUPABASE_DB_URL", DEFAULT_CONN_STR)
+
+# Automatically convert any direct IPv6 host to IPv4 Singapore pooler for cloud containers
+if "db.uhgzgbkovachkdiaudfx.supabase.co" in raw_db_url:
+    DATABASE_URL = DEFAULT_CONN_STR
+else:
+    DATABASE_URL = raw_db_url
 
 logger = logging.getLogger("supabase_db")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 
 
 def get_connection():
-    """Create a new PostgreSQL connection to Supabase."""
-    return psycopg2.connect(DATABASE_URL, connect_timeout=10)
+    """Create a new PostgreSQL connection to Supabase with automatic IPv4 fallback."""
+    try:
+        return psycopg2.connect(DATABASE_URL, connect_timeout=8)
+    except Exception as e:
+        if DATABASE_URL != DEFAULT_CONN_STR:
+            try:
+                return psycopg2.connect(DEFAULT_CONN_STR, connect_timeout=8)
+            except Exception:
+                pass
+        raise e
 
 
 def init_db():
