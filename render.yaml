@@ -4,7 +4,7 @@ services:
     env: python
     region: oregon
     plan: free
-    buildCommand: "pip install -r marketing-bot/requirements.txt aiohttp requests"
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "python3 server.py"
     envVars:
       - key: PORT
@@ -14,5 +14,6 @@ services:
       - key: DASHBOARD_USER
         value: admin
       - key: DASHBOARD_PASS
-        generateValue: false
         value: novaborrow2026
+      - key: SUPABASE_DB_URL
+        value: postgresql://postgres:%2339DGAKT%23eMbjNg@db.uhgzgbkovachkdiaudfx.supabase.co:5432/postgres
