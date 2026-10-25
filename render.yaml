@@ -16,4 +16,4 @@ services:
       - key: DASHBOARD_PASS
         value: novaborrow2026
       - key: SUPABASE_DB_URL
-        value: postgresql://postgres:%2339DGAKT%23eMbjNg@db.uhgzgbkovachkdiaudfx.supabase.co:5432/postgres
+        value: postgresql://postgres.uhgzgbkovachkdiaudfx:%2339DGAKT%23eMbjNg@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres

@@ -12,9 +12,9 @@ from typing import Dict, Any, List, Optional
 import psycopg2
 from psycopg2.extras import execute_values, Json
 
-# Supabase connection string
+# Supabase connection string (IPv4 Pooler for Render / cloud compatibility)
 # Can be overridden with SUPABASE_DB_URL environment variable
-DEFAULT_CONN_STR = "postgresql://postgres:%2339DGAKT%23eMbjNg@db.uhgzgbkovachkdiaudfx.supabase.co:5432/postgres"
+DEFAULT_CONN_STR = "postgresql://postgres.uhgzgbkovachkdiaudfx:%2339DGAKT%23eMbjNg@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
 DATABASE_URL = os.environ.get("SUPABASE_DB_URL", DEFAULT_CONN_STR)
 
 logger = logging.getLogger("supabase_db")
